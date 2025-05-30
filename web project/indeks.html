@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Kesehatan Mental Mahasiswa</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+</head>     
+<body>
+  <header>
+  <div class="header-container">
+    <img src="assets/logo.jpg" alt="Logo Kesehatan Mental" class="logo"/>
+    <button id="menuToggle" class="menu-toggle">☰</button>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="#Home" class="btn">Home</a></li>
+        <li><a href="#layanan" class="btn">Layanan</a></li>
+        <li><a href="#mahasiswa" class="btn">Mahasiswa</a></li>
+        <li><a href="#platform" class="btn">Platform</a></li>
+        <li><a href="#tes" class="btn" onclick="tampilkanTes()">Mulai</a></li>
+      </ul>
+    </nav>
+    <button id="toggleThemeBtn" class="theme-toggle">🌙 Dark Mode</button>
+  </div>
+</header>
+
+  <section id="Home" class="hero">
+    <div class="hero-flex">
+      <div class="hero-text">
+        <h1>PLATFORM DIGITAL UNTUK DUKUNGAN KESEHATAN MENTAL MAHASISWA</h1>
+      </div>
+      <div class="hero-desc">
+        <p>Kami mengerti bahwa kesehatan mental sama pentingnya dengan kesehatan fisik bagi mahasiswa. Platform digital kami memberikan beragam layanan untuk membantu mahasiswa menjaga kesehatan mentalnya.</p>
+        <div class="hero-btn-container">
+        <a href="#layanan" class="btn hero-btn">Lihat Layanan Kami</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="layanan" class="features">
+    <h1>Layanan Pendukung Kesehatan Mental</h1>
+    <p>Kami menyediakan berbagai layanan digital yang dirancang khusus untuk membantu mahasiswa mengelola stres dan kesehatan mental mereka.</p>
+
+    <div class="feature-container">
+      <div class="feature right-image">
+        <img src="assets/gambar1.jpg" alt="Ilustrasi menulis jurnal emosi">
+        <div class="text">
+          <h2>Jurnal Emosi</h2>
+          <p>Kami menyediakan beberapa jurnal ilmiah dari beberapa narasumber terpercaya tentang Kesehatan Mental.</p>
+          <button class="toggle-journal-btn">Lihat</button>
+          <div class="journal-entries" style="display: none;">
+            <ul>
+             <li><strong>Silahkan baca beberapa jurnal terpercaya tentang kesehatan mental:</strong></li>
+            </ul>
+            <div class=" embed-list">
+              <embed src="5.+Ulfah.pdf" type="application/pdf" width="100%" height="600px">
+              <embed src="962-Article Text-3898-1-10-20210930 (1).pdf" type="application/pdf" width="100%" height="600px">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature left-image">
+        <img src="assets/gambar2.jpg" alt="Obrolan Anonim">
+        <div class="text">
+          <h2>Obrolan Anonim</h2>
+          <p>Berbagi tanpa takut dihakimi, kapan saja, dengan siapa saja, Kami menyediakan link untuk  diisi oleh teman-teman agar bisa mencurahkan si hati tanpa takut dikenali(Anonim).</p>
+          <button class="toggle-journal-btn">Lihat</button>
+          <div class="journal-entries" style="display: none;">
+            <ul>
+              <li><strong>Curahkan semua isi hati anda pada link di bawah ini:</strong></li>
+              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScrWVl-GJXd8aegssM0MIwA3-JVX5mmqcfsJkIZM-75DsYdsQ/viewform?usp=header" target="_blank">Formulir Obrolan Anonim</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature right-image">
+         <img src="assets/gambar3.jpg" alt="Relaksasi">
+        <div class="text">
+          <h2>Relaksasi</h2>
+          <p>Meditasi, pernapasan, dan musik untuk mengurangi stres, Kami menyediakan tips dan trick untuk mengurangi rasa stress, kami juga menyediakan link video tentang Relaksasi dan musik agar membuat suasana hati menjadi lebih tenang.</p>
+          <button class="toggle-journal-btn">Lihat</button>
+          <div class="journal-entries" style="display: none;">
+            <ul>
+              <li><strong>Teknik Pernapasan:</strong> Tarik napas dalam 4 detik, tahan 7 detik, buang napas 8 detik.</li>
+              <li><strong>Musik Relaksasi:</strong> <a href="https://youtu.be/DQPrvrFAziE?feature=shared" target="_blank">Dengarkan di sini</a></li>
+              <li><strong>Tutorial Relaksasi:</strong> <a href="https://youtu.be/0LqWXlBfBxE?feature=shared" target="_blank">Tonton di sini</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mental-health-section">
+    <img src="assets/gambar4.jpg" alt="Mental Health Matters">
+    <div class="support-text">
+      <h2>MULAI DUKUNGAN</h2>
+      <h1>Tulis Catatan Pikiran Anda</h1>
+      <p>Ketahui stres Anda lebih dalam dengan mengambil Tes Stres kami yang dibuat khusus untuk mahasiswa.</p>
+      <button onclick="tampilkanTes()">Ambil Tes</button>
+      <p>atau gabung Obrolan Tanpa Nama kami</p>
+    </div>
+  </section>
+
+  <section id="mahasiswa" class="mental-awareness">
+    <div class="text-row">
+      <div class="left-text">
+        <p class="small-text">Ayo bantu kesehatan mental.</p>
+        <h2>Peduli Kesehatan Mental Mahasiswa</h2>
+      </div>
+      <div class="right-text">
+        <ul>
+          <li>✨ "Kami hadir untuk mendukung perjalanan mentalmu. Karena setiap perasaan berharga, dan kamu tidak sendiri."</li>
+          <li>💡 "Stres akademik itu nyata, tapi begitu juga dengan solusi. Kami ada untuk membantumu menemukan keseimbangan."</li>
+          <li>💬 "Berbagi cerita, memahami diri, dan menemukan ketenangan, semua bisa dimulai dari sini."</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="image">
+      <img src="assets/gambar5.jpg" alt="Gambar kesehatan mental">
+    </div>
+
+    <div class="mental-stats">
+      <div class="stat-box">
+        <h2>24</h2>
+        <h3>Jam Perhari</h3>
+        <p>Platform kami tersedia 24 jam sehari, 7 hari seminggu.</p>
+      </div>
+      <div class="stat-box">
+        <h2>100</h2>
+        <h3>Spesialis</h3>
+        <p>Kami memiliki lebih dari 100 spesialis kesehatan mental yang siap membantu.</p>
+      </div>
+      <div class="stat-box">
+        <h2>50</h2>
+        <h3>Kampus</h3>
+        <p>Kami melayani lebih dari 50 kampus di seluruh Indonesia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tes" class="test-section" style="display: none;">
+    <div class="test-header">
+      <h1>Tes Kesehatan Mental Mahasiswa</h1>
+      <button onclick="tutupTes()" class="close-btn">× Tutup</button>
+    </div>
+    <p>Isi tes berikut untuk mengevaluasi tingkat stres Anda:</p>
+    
+    <form id="mentalHealthTestForm">
+      <!-- Pertanyaan akan dimasukkan di sini oleh JavaScript -->
+    </form>
+    
+    <div class="test-buttons">
+      <button onclick="submitTest()" class="btn">Submit Tes</button>
+      <button onclick="tutupTes()" class="btn cancel-btn">Batal</button>
+    </div>
+    <div id="result"></div>
+  </section>
+
+  <footer>
+    <div id="platform" class="footer-content">
+      <div teksalign="center">
+        <h4>Dukungan Mahasiswa</h4>
+        <ul>
+          <li>Hubungi Kami melalui platform di bawah ini: </li>
+          <li>Email: "KesehatanMentalMahasiswa@gmail.com" </li>
+          <li>Instagram: "@kesehatan_mental_mahasiswa" </li>
+          <li>Facebook: "Kesehatan.Mental.Mahasiswa" </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <img src="assets/logo.jpg" alt="Logo Kesehatan Mental" class="logo"/>
+      <p>Kesehatan Mental Mahasiswa</p>
+      <p>Platform dukungan kesehatan mental untuk mahasiswa Indonesia.</p>
+      <div class="policy">
+        <span>Cookies Settings</span>
+        <span>Privacy Policy</span>
+        <span>MichaelIvanWong</span>
+        <span>Terms of Service</span>
+        <span>2025. All rights reserved</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
